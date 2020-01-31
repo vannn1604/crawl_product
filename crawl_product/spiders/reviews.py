@@ -40,7 +40,7 @@ class ReviewsSpider(scrapy.Spider):
             review = {
                 "username": username,
                 "time": div.xpath("./ul[1]/li[3]/time/text()").get(),
-                "content": div.xpath("./p/text()").get(),
+                "content": div.xpath("./p/text()").get(default="").strip(),
                 "rating": div.xpath("./ul[2]/li[1]/span[2]/text()").get(),
                 "location": div.xpath("./ul[1]/li[2]/span/text()").get(),
             }

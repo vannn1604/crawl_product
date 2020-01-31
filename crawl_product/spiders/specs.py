@@ -1,5 +1,6 @@
 import scrapy
 from collections import defaultdict
+import re
 
 
 class SpecsSpider(scrapy.Spider):
@@ -31,18 +32,75 @@ class SpecsSpider(scrapy.Spider):
             specs[th] = {}
             for j, tr in enumerate(table.xpath("./tr")):
                 if i == 0 and j == 0:
-                    td2 = tr.xpath("./td[2]/a/text()").get()
+                    td2 = tr.xpath("./td[2]/a/text()").get(default="").strip()
                 else:
-                    td2 = tr.xpath("./td[2]/text()").get()
-                td1 = tr.xpath("./td[1]/a/text()").get()
+                    td2 = tr.xpath("./td[2]/text()").get(default="").strip()
+                td1 = tr.xpath("./td[1]/a/text()").get(default="").strip()
                 if not td1:
                     td1 = "Other"
                 specs[th][td1] = td2
+        scripts = response.xpath('//*[@id="body"]/div/script[1]/text()').getall()
+        spec_ver = None
+        for script in scripts:
+            if "SPEC_VERSIONS" in script:
+                script = re.sub("[\\\\\n]", "", script)
+                match = re.search(r"\[.*\]", script)
+                if match and match.group():
+                    script = match.group()
 
+        a = re.findall(r"{(.*?)}", script)
+        m = re.findall(r'"([^"]*)"', script)
+        regex = r"{.*?}|(\w+)"
+        matches = re.finditer(regex, script, re.MULTILINE)
+        c = []
+        for match in matches:
+            if match.group(1):
+                c.append(match.group(1))
+
+        array = []
+        for i, n in enumerate(m):
+            if "href" in n:
+                array.append({"key": i, "next_key": m[i + 1], "value": "" + n + m[i + 1]})
+
+        for elmt in array:
+            m[elmt["key"]] = elmt["value"]
+        for elmt in array:
+            m.remove(elmt["next_key"])
+
+        spec_ver = {}
+        for i, n in enumerate(m):
+            if n in c:
+                spec_ver[n] = {}
+                for j in range(i + 1, len(m) - 1):
+                    if m[j] in c:
+                        break
+                    if (j - i) % 2 == 1:
+                        spec_ver[n][m[j]] = m[j + 1]
+
+        if not spec_ver:
+            yield {"brand": brand, "name": name, "version": "main", "specs": specs}
+        else:
+            for ver in spec_ver:  # a2220
+                spec_follow_ver = specs
+                for spec in spec_ver[ver]:  # sim
+
+                    for th in specs:
+                        for td in specs[th]:
+                            if spec == td.lower():
+                                spec_follow_ver[th][td] = spec_ver[ver][spec]
+                yield {"brand": brand, "name": name, "version": ver, "spec": spec_follow_ver}
+
+
+# dung regex de loc du lieu, push to db ko đc hết
+
+
+"""
         item = defaultdict(list)
         item["brand"] = brand
         item["name"] = name
         item["specs"] = specs
+
+        yield item
 
         for product in response.xpath('//*[@id="user-comments"]/div[4]/div[1]/ul/li[1]/a'):
             yield response.follow(
@@ -96,3 +154,5 @@ class SpecsSpider(scrapy.Spider):
             yield response.follow(
                 a, callback=self.parse_reviews, cb_kwargs={"item": item},
             )
+"""
+
