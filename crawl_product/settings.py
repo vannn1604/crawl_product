@@ -94,7 +94,12 @@ DOWNLOADER_MIDDLEWARES = {
     "scrapy_user_agents.middlewares.RandomUserAgentMiddleware": 20000000,
 }
 
-ITEM_PIPELINES = {"scrapy.pipelines.images.ImagesPipeline": 1}
+ITEM_PIPELINES = {
+    "crawl_product.pipelines.CrawlProductPipeline": 300,
+}
 
-IMAGES_STORE = "media"
+DB_HOST = "172.17.0.2"
+DB_NAME = "tizzie"
+DB_USER = "postgres"
+DB_PASSWORD = "tizzie"
 

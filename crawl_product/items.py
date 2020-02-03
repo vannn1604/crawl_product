@@ -8,12 +8,8 @@
 import scrapy
 
 
-class CrawlProductItem(scrapy.Item):
+class SpecItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
-
-
-class MediaItem(scrapy.Item):
-    image_urls = scrapy.Field()
-    images = scrapy.Field()
+    brand = scrapy.Field()
+    name = scrapy.Field()
+    spec = scrapy.Field()

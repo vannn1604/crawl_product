@@ -16,28 +16,27 @@ def queryQuotes(conn):
         print(row)
 '''
 
-connection = psycopg2.connect(host=hostname, user=username, password=password, dbname=database)
+connection = psycopg2.connect(
+    host="172.17.0.2", database="tizzie", user="postgres", password="tizzie"
+)
 cur = connection.cursor()
 with open("spec.json") as json_file:
     data_product = json.load(json_file)
     for data in data_product:
-        try:
-            cur.execute(
-                "insert into products(name,brand,specs) values(%s,%s,%s)",
-                (data["name"], data["brand"], json.dumps(data["specs"]),),
-            )
-            connection.commit()
-            # cur.execute(
-            #     "select id from products where name=%s", (data["name"],),
-            # )
-            # product_id = cur.fetchone()
-            # print(product_id[0])
-            # for review in data["reviews"]:
-            #     cur.execute(
-            #         "insert into product_review(product,data) values(%s,%s)",
-            #         (product_id[0], json.dumps(review)),
-            #     )
-            #     connection.commit()
-        except:
-            continue
+        cur.execute(
+            "insert into products(name,brand,spec) values(%s,%s,%s)",
+            (data["name"], data["brand"], json.dumps(data["spec"]),),
+        )
+        connection.commit()
+        # cur.execute(
+        #     "select id from products where name=%s", (data["name"],),
+        # )
+        # product_id = cur.fetchone()
+        # print(product_id[0])
+        # for review in data["reviews"]:
+        #     cur.execute(
+        #         "insert into product_review(product,data) values(%s,%s)",
+        #         (product_id[0], json.dumps(review)),
+        #     )
+        #     connection.commit()
 connection.close()
