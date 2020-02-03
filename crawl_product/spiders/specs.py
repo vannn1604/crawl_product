@@ -1,6 +1,7 @@
 import scrapy
 from collections import defaultdict
 import re
+from ..items import SpecItem
 
 
 class SpecsSpider(scrapy.Spider):
@@ -32,12 +33,17 @@ class SpecsSpider(scrapy.Spider):
             specs[th] = {}
             for j, tr in enumerate(table.xpath("./tr")):
                 if i == 0 and j == 0:
-                    td2 = tr.xpath("./td[2]/a/text()").get(default="").strip()
+                    td2 = tr.xpath("./td[2]/a/text()").get()
                 else:
-                    td2 = tr.xpath("./td[2]/text()").get(default="").strip()
-                td1 = tr.xpath("./td[1]/a/text()").get(default="").strip()
+                    td2 = tr.xpath("./td[2]/text()").get()
+
+                if td2 is not None:
+                    td2.strip()
+                td1 = tr.xpath("./td[1]/a/text()").get()
                 if not td1:
                     td1 = "Other"
+                else:
+                    td1.strip()
                 specs[th][td1] = td2
         scripts = response.xpath('//*[@id="body"]/div/script[1]/text()').getall()
         spec_ver = None
@@ -48,7 +54,7 @@ class SpecsSpider(scrapy.Spider):
                 if match and match.group():
                     script = match.group()
 
-        a = re.findall(r"{(.*?)}", script)
+        # a = re.findall(r"{(.*?)}", script)
         m = re.findall(r'"([^"]*)"', script)
         regex = r"{.*?}|(\w+)"
         matches = re.finditer(regex, script, re.MULTILINE)
@@ -77,18 +83,19 @@ class SpecsSpider(scrapy.Spider):
                     if (j - i) % 2 == 1:
                         spec_ver[n][m[j]] = m[j + 1]
 
-        if not spec_ver:
-            yield {"brand": brand, "name": name, "version": "main", "specs": specs}
-        else:
-            for ver in spec_ver:  # a2220
-                spec_follow_ver = specs
-                for spec in spec_ver[ver]:  # sim
+        if spec_ver:
+            specs["SPEC_VERSIONS"] = spec_ver
 
-                    for th in specs:
-                        for td in specs[th]:
-                            if spec == td.lower():
-                                spec_follow_ver[th][td] = spec_ver[ver][spec]
-                yield {"brand": brand, "name": name, "version": ver, "spec": spec_follow_ver}
+        yield SpecItem(brand=brand, name=name, spec=specs)
+        # for ver in spec_ver:  # a2220
+        #     spec_follow_ver = specs
+        #     for spec in spec_ver[ver]:  # sim
+
+        #         for th in specs:
+        #             for td in specs[th]:
+        #                 if spec == td.lower():
+        #                     spec_follow_ver[th][td] = spec_ver[ver][spec]
+        #     yield {"brand": brand, "name": name, "version": ver, "specs": spec_follow_ver}
 
 
 # dung regex de loc du lieu, push to db ko đc hết
