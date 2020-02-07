@@ -100,6 +100,6 @@ ITEM_PIPELINES = {
 
 DB_HOST = "172.17.0.2"
 DB_NAME = "tizzie"
-DB_USER = "postgres"
+DB_USER = "tizzie"
 DB_PASSWORD = "tizzie"
 

@@ -5,8 +5,10 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
-import psycopg2
 import json
+
+import psycopg2
+
 from . import settings
 
 
@@ -18,6 +20,7 @@ class CrawlProductPipeline(object):
             user=settings.DB_USER,
             password=settings.DB_PASSWORD,
         )
+        self.connection.autocommit = True
         self.cur = self.connection.cursor()
 
     def close_spider(self, spider):
@@ -27,11 +30,11 @@ class CrawlProductPipeline(object):
     def process_item(self, item, spider):
         try:
             self.cur.execute(
-                "insert into products(name,brand,spec) values(%s,%s,%s)",
-                (item["name"], item["brand"], json.dumps(item["spec"]),),
+                "insert into products(name,brand,specs) values(%s,%s,%s)",
+                (item["name"], item["brand"], json.dumps(item["specs"]),),
             )
-            self.connection.commit()
         except psycopg2.DatabaseError as error:
-            print(error)
+            f = open("db_error.txt", "a")
+            f.write("" + item["brand"] + " - " + item["name"] + " - " + str(error))
+            f.close()
         return item
-

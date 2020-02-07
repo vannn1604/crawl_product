@@ -1,0 +1,330 @@
+ZTE - Flash - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Flash) already exists.
+Asus - Memo - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Memo) already exists.
+Chea - A90 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A90) already exists.
+Dell - Flash - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Flash) already exists.
+alcatel - A7 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A7) already exists.
+Amazon - Fire 7 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Fire 7) already exists.
+Amoi - A90 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A90) already exists.
+Amoi - A200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A200) already exists.
+Vodafone - 228 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(228) already exists.
+vivo - V9 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(V9) already exists.
+Vodafone - Smart Tab 7 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Smart Tab 7) already exists.
+XOLO - Q3000 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Q3000) already exists.
+Ulefone - S1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S1) already exists.
+Unnecto - Eco - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Eco) already exists.
+Vertu - Diamond - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Diamond) already exists.
+vivo - S1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S1) already exists.
+Wiko - View - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(View) already exists.
+XOLO - Era - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Era) already exists.
+Realme - 1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(1) already exists.
+Siemens - C11 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C11) already exists.
+Samsung - B100 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(B100) already exists.
+Samsung - X500 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X500) already exists.
+Samsung - A200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A200) already exists.
+Samsung - R220 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(R220) already exists.
+Samsung - A500 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A500) already exists.
+Samsung - E100 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(E100) already exists.
+Samsung - C100 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C100) already exists.
+Samsung - E600 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(E600) already exists.
+Samsung - X910 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X910) already exists.
+Samsung - E860 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(E860) already exists.
+Samsung - D800 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(D800) already exists.
+Samsung - i310 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(i310) already exists.
+Samsung - i320 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(i320) already exists.
+Samsung - i600 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(i600) already exists.
+Samsung - C260 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C260) already exists.
+Samsung - M310 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(M310) already exists.
+Samsung - G810 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(G810) already exists.
+Sony Ericsson - Z700 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z700) already exists.
+Sony Ericsson - T200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(T200) already exists.
+Sony Ericsson - T100 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(T100) already exists.
+Sony Ericsson - Z600 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z600) already exists.
+Sony Ericsson - P900 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(P900) already exists.
+Sony Ericsson - Z500 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z500) already exists.
+Sony Ericsson - P910 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(P910) already exists.
+Sony Ericsson - J200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(J200) already exists.
+Samsung - Z1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z1) already exists.
+Siemens - C10 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C10) already exists.
+Siemens - S11 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S11) already exists.
+Sony Ericsson - J210 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(J210) already exists.
+Sony Ericsson - Z520 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z520) already exists.
+Sony Ericsson - Z300 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z300) already exists.
+Sony Ericsson - M600 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(M600) already exists.
+Sony Ericsson - Z550 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z550) already exists.
+Sony Ericsson - Z710 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z710) already exists.
+Sony Ericsson - W850 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(W850) already exists.
+Sony Ericsson - Z310 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z310) already exists.
+Samsung - Z3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z3) already exists.
+Siemens - A40 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A40) already exists.
+Siemens - S40 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S40) already exists.
+Siemens - C55 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C55) already exists.
+Siemens - U10 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(U10) already exists.
+Siemens - C60 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C60) already exists.
+Siemens - A60 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A60) already exists.
+Sony Ericsson - S500 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S500) already exists.
+Sony Ericsson - G900 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(G900) already exists.
+Sony Ericsson - S302 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S302) already exists.
+Sony Ericsson - C510 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C510) already exists.
+Realme - C1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C1) already exists.
+Realme - 3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(3) already exists.
+Realme - C2 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C2) already exists.
+Realme - 5 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(5) already exists.
+Realme - Q - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Q) already exists.
+Realme - C3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C3) already exists.
+Sendo - S200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S200) already exists.
+Sendo - P200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(P200) already exists.
+Sendo - S300 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S300) already exists.
+Sendo - X - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X) already exists.
+Sendo - S600 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S600) already exists.
+Sendo - S1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S1) already exists.
+Sendo - X2 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X2) already exists.
+Sharp - Z2 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z2) already exists.
+Sharp - Z3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z3) already exists.
+Siemens - A75 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A75) already exists.
+Siemens - C75 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C75) already exists.
+T-Mobile - Tap - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Tap) already exists.
+Orange - Rio - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Rio) already exists.
+OnePlus - One - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(One) already exists.
+Panasonic - A200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A200) already exists.
+Panasonic - A500 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A500) already exists.
+Panasonic - X100 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X100) already exists.
+Panasonic - X200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X200) already exists.
+Panasonic - X300 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X300) already exists.
+Panasonic - X400 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X400) already exists.
+Panasonic - G600 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(G600) already exists.
+Philips - S200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(S200) already exists.
+Philips - Spark - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Spark) already exists.
+Nokia - 703 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(703) already exists.
+Nokia - E72 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(E72) already exists.
+Nokia - C5 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C5) already exists.
+Nokia - C3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C3) already exists.
+Nokia - C6 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C6) already exists.
+Nokia - C7 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C7) already exists.
+Philips - M600 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(M600) already exists.
+Philips - X800 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X800) already exists.
+Philips - M200 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(M200) already exists.
+Philips - X500 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X500) already exists.
+Philips - E100 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(E100) already exists.
+Philips - X620 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X620) already exists.
+Philips - E210 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(E210) already exists.
+Philips - X810 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X810) already exists.
+Panasonic - X500 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X500) already exists.
+Panasonic - X700 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X700) already exists.
+Panasonic - Z800 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z800) already exists.
+Panasonic - X800 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X800) already exists.
+Panasonic - A210 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A210) already exists.
+Panasonic - VS2 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(VS2) already exists.
+Panasonic - VS3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(VS3) already exists.
+Philips - X630 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X630) already exists.
+Philips - X550 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X550) already exists.
+Philips - X650 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X650) already exists.
+Philips - C702 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C702) already exists.
+Philips - X100 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X100) already exists.
+Philips - X510 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X510) already exists.
+Philips - D900 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(D900) already exists.
+Nokia - 208 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(208) already exists.
+Oppo - R1S - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(R1S) already exists.
+Oppo - U3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(U3) already exists.
+Oppo - A31 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A31) already exists.
+Pantech - G500 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(G500) already exists.
+Pantech - G700 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(G700) already exists.
+Pantech - G800 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(G800) already exists.
+Pantech - G600 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(G600) already exists.
+Pantech - G900 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(G900) already exists.
+Philips - T910 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(T910) already exists.
+Philips - W715 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(W715) already exists.
+Plum - Orbit - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Orbit) already exists.
+Nokia - X - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X) already exists.
+Nokia - 225 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(225) already exists.
+Nokia - N1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(N1) already exists.
+Nokia - 150 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(150) already exists.
+Nokia - 5 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(5) already exists.
+O2 - X2 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X2) already exists.
+O2 - X3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X3) already exists.
+O2 - X7 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X7) already exists.
+Oppo - A59 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A59) already exists.
+Oppo - A57 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A57) already exists.
+Oppo - A77 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A77) already exists.
+Oppo - A83 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A83) already exists.
+Oppo - A1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(A1) already exists.
+Pantech - Impact - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Impact) already exists.
+Philips - T939 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(T939) already exists.
+Plum - Link - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Link) already exists.
+Plum - Z710 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Z710) already exists.
+NIU - Andy 5T - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Andy 5T) already exists.
+NIU - Andy 5EI - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Andy 5EI) already exists.
+NIU - Andy 4E2I - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Andy 4E2I) already exists.
+NIU - Andy 3.5E2I - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(Andy 3.5E2I) already exists.
+Nokia - 3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(3) already exists.
+Nokia - 7 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(7) already exists.
+Nokia - 2 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(2) already exists.
+Nokia - 1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(1) already exists.
+Nokia - C1 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(C1) already exists.
+OnePlus - 2 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(2) already exists.
+OnePlus - 3 - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(3) already exists.
+OnePlus - X - duplicate key value violates unique constraint "products_name_key"
+DETAIL:  Key (name)=(X) already exists.

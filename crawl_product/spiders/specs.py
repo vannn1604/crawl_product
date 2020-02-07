@@ -86,7 +86,7 @@ class SpecsSpider(scrapy.Spider):
         if spec_ver:
             specs["SPEC_VERSIONS"] = spec_ver
 
-        yield SpecItem(brand=brand, name=name, spec=specs)
+        yield SpecItem(brand=brand, name=name, specs=specs)
         # for ver in spec_ver:  # a2220
         #     spec_follow_ver = specs
         #     for spec in spec_ver[ver]:  # sim

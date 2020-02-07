@@ -12,4 +12,4 @@ class SpecItem(scrapy.Item):
     # define the fields for your item here like:
     brand = scrapy.Field()
     name = scrapy.Field()
-    spec = scrapy.Field()
+    specs = scrapy.Field()
